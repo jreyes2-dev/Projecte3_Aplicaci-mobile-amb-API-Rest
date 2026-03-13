@@ -1,0 +1,465 @@
+= [NOMBRE DE LA APP]
+:toc:
+:toc-title: Índex
+:sectnums:
+:icons: font
+
+[.text-center]
+Projecte ABP - Projecte 3 - Aplicació mobile amb API REST
+
+== Descripció del projecte
+
+[Nom de l'app] és una aplicació mòbil Android desenvolupada amb Kotlin i Jetpack Compose que permet consultar vehicles, veure’n el detall, consultar la disponibilitat per rang de dates i gestionar reserves mitjançant una arquitectura client-servidor basada en una API REST implementada amb Spring Boot.
+
+L’aplicació diferencia entre funcionalitats per a usuari anònim i funcionalitats per a client autenticat. Els usuaris registrats poden iniciar sessió, editar el seu perfil, crear reserves, consultar-les, ordenar-les i anul·lar-les abans de la seva data d’inici.
+
+== Objectiu
+
+L’objectiu del projecte és implementar una solució completa formada per:
+
+* Un backend REST amb Spring Boot i Maven.
+* Una aplicació Android nativa amb Kotlin i Jetpack Compose.
+* Persistència de dades amb MySQL.
+* Comunicació desacoblada entre client i servidor seguint principis REST.
+* Documentació tècnica i de seguiment del projecte dins del repositori.
+
+== Vídeo del projecte
+
+Vídeo promocional / demo:
+
+* link:[https://drive.google.com/file/d/1wi4RcSJEHeLXuTi5LG0krJqMkQiLLNYb/view?usp=sharing][Veure vídeo del projecte]
+
+
+== Membres del grup
+
+* Bachir El Harrak
+* Javier Sánchez Osuna
+* Hamza Rourou Rourou
+* Joel Reyes Niebla
+
+== Portafolis personals
+
+* link:[https://github.com/bvbJV/][Portafoli Bachir El Harrak]
+* link:[https://github.com/javiprogramm28][Portafoli Javier Sánchez Osuna]
+* link:[https://github.com/Hrourou][Portafoli Hamza Rourou Rourou]
+* link:[https://github.com/jreyes2-dev][Portafoli Joel Reyes Niebla]
+
+== Estructura del repositori
+
+El repositori està organitzat en les tres carpetes principals requerides pel projecte:
+
+[source,text]
+----
+/
+├── backend/
+├── mobile/
+├── documentacio/
+└── README.adoc
+----
+
+=== backend
+
+Conté el projecte del servidor desenvolupat amb Spring Boot i Maven.
+
+=== mobile
+
+Conté el projecte del client Android desenvolupat amb Kotlin, Jetpack Compose i arquitectura MVVM.
+
+=== documentacio
+
+Conté la documentació del projecte en format AsciiDoc, incloent planificació, seguiment de sprints, decisions tècniques, incidències, millores i conclusions.
+
+== Tecnologies utilitzades
+
+=== Backend
+
+* Java [VERSIÓ]
+* Spring Boot
+* Maven
+* Spring Web
+* Spring Data JPA
+* MySQL
+* [Swagger / Spring Security / Validation / Mail, si aplica]
+
+=== Mobile
+
+* Kotlin
+* Android Studio
+* Jetpack Compose
+* Material Design 3
+* Navigation Compose
+* ViewModel
+* StateFlow / MutableStateFlow
+* Coroutines
+* Retrofit
+* Coil / Glide / Gson / Moshi [segons correspongui]
+
+=== Eines de desenvolupament
+
+* Git
+* GitLab
+* Postman [si s’ha utilitzat]
+* Figma [si s’ha utilitzat]
+* MySQL Workbench [si s’ha utilitzat]
+
+== Arquitectura del sistema
+
+El projecte segueix una arquitectura client-servidor desacoblada:
+
+* El backend exposa una API REST.
+* El client Android consumeix aquesta API mitjançant HTTP.
+* La persistència es gestiona al backend.
+* L’estat de sessió del client es desa al dispositiu mòbil sense guardar la contrasenya.
+
+=== Backend
+
+El backend està estructurat per capes:
+
+* Capa API REST: controladors i endpoints.
+* Capa de lògica de negoci: serveis.
+* Capa de persistència: repositoris i entitats.
+
+=== Mobile
+
+L’aplicació mòbil està estructurada en capes i funcionalitats, seguint el model MVVM a la capa d’interfície:
+
+* UI layer
+* Domain layer
+* Data layer
+
+La gestió d’estat es realitza amb `MutableStateFlow` i `StateFlow`, i les operacions asíncrones es resolen amb coroutines.
+
+== Funcionalitats implementades
+
+=== Usuari anònim
+
+* Registre de client
+* Llistat de vehicles
+* Detall de vehicle
+* Ordenació de vehicles per preu
+* Consulta de disponibilitat per rang de dates
+* Accés a login
+
+=== Usuari autenticat
+
+* Login
+* Recuperació de contrasenya
+* Logout
+* Edició del perfil
+* Alta de reserva
+* Llistat de reserves pròpies
+* Ordenació de reserves per data d’inici
+* Detall de reserva
+* Anul·lació de reserva abans de l’inici
+
+== Requeriments funcionals coberts
+
+[cols="1,4", options="header"]
+|===
+| Codi | Requeriment
+
+| RF01
+| Login
+
+| RF02
+| Registre
+
+| RF03
+| Recuperar contrasenya
+
+| RF04
+| Editar perfil usuari
+
+| RF05
+| Logout
+
+| RF50
+| Alta de reserva
+
+| RF51
+| Llistat de reserves
+
+| RF52
+| Ordenar reserves per data d’inici
+
+| RF53
+| Veure detall d’una reserva
+
+| RF55
+| Anul·lar reserva
+
+| RF56
+| Consultar disponibilitat de vehicles per rang de dates
+
+| RF90
+| Llistar vehicles
+
+| RF91
+| Veure detall d’un vehicle
+
+| RF92
+| Ordenar vehicles per preu
+|===
+
+== Característiques destacades
+
+* Arquitectura REST desacoblada entre client i servidor.
+* Aplicació Android nativa amb Jetpack Compose.
+* Navegació principal amb Bottom Navigation.
+* Internacionalització en català, castellà i anglès.
+* Interfície basada en Material Design 3.
+* Persistència i gestió centralitzada de dades al backend.
+* Validació de fluxos principals de reserva i autenticació.
+
+== Requisits previs
+
+=== Backend
+
+* JDK [VERSIÓ]
+* Maven [VERSIÓ] o wrapper del projecte
+* MySQL [VERSIÓ]
+
+=== Mobile
+
+* Android Studio [VERSIÓ]
+* SDK Android [API mínima]
+* Emulador Android o dispositiu físic Android
+
+== Configuració del backend
+
+=== 1. Crear la base de dades
+
+Crear una base de dades MySQL amb el nom:
+
+[source,sql]
+----
+CREATE DATABASE [nom_base_dades];
+----
+
+=== 2. Configurar credencials
+
+Editar el fitxer:
+
+[source,text]
+----
+backend/src/main/resources/application.properties
+----
+
+i ajustar com a mínim:
+
+[source,properties]
+----
+spring.datasource.url=jdbc:mysql://localhost:3306/[nom_base_dades]
+spring.datasource.username=[usuari]
+spring.datasource.password=[contrasenya]
+spring.jpa.hibernate.ddl-auto=update
+----
+
+=== 3. Executar el backend
+
+Des de la carpeta `backend`:
+
+[source,bash]
+----
+./mvnw spring-boot:run
+----
+
+o bé:
+
+[source,bash]
+----
+mvn spring-boot:run
+----
+
+El backend quedarà disponible a:
+
+[source,text]
+----
+http://localhost:8080
+----
+
+== Configuració de l’aplicació mòbil
+
+=== 1. Obrir el projecte
+
+Obrir la carpeta `mobile` amb Android Studio.
+
+=== 2. Configurar la URL base de l’API
+
+Comprovar la configuració de la URL base del backend a la capa de xarxa del projecte mobile.
+
+Per executar en:
+
+* Emulador Android: utilitzar la IP adequada segons configuració local.
+* Dispositiu físic: utilitzar la IP local de la màquina on corre el backend.
+* Entorn final: actualitzar la `baseUrl` abans de la demo o entrega si cal.
+
+=== 3. Executar l’app
+
+Executar l’aplicació des d’Android Studio en un:
+
+* emulador Android, o
+* dispositiu físic Android
+
+== Dades de demo
+
+Per a la demo del projecte es disposa de:
+
+* 3 clients
+* mínim 1 imatge de DNI i carnet de conduir per client
+* mínim 3 vehicles
+* mínim 2 reserves per vehicle
+
+A més, s’inclouen els fitxers requerits per la demo:
+
+* exportació de la base de dades MySQL
+* fitxer `password.txt` amb les credencials necessàries per a la prova
+
+== Fitxers lliurats
+
+Aquest lliurament inclou:
+
+* Codi font complet del backend
+* Codi font complet del client Android
+* Documentació del projecte en AsciiDoc
+* Exportació de la base de dades
+* Fitxer `password.txt`
+* Enllaç al vídeo del projecte
+* Enllaços als portafolis personals
+
+== Guia ràpida d’ús
+
+=== Flux d’usuari anònim
+
+. Obrir l’app
+. Consultar el llistat de vehicles
+. Veure el detall d’un vehicle
+. Filtrar o consultar disponibilitat per dates
+. Registrar-se o iniciar sessió
+
+=== Flux d’usuari autenticat
+
+. Iniciar sessió
+. Consultar vehicles disponibles
+. Crear una reserva
+. Consultar les reserves pròpies
+. Veure el detall d’una reserva
+. Anul·lar una reserva abans de l’inici
+. Editar el perfil
+. Tancar sessió
+
+== Gestió del projecte amb GitLab
+
+El desenvolupament del projecte s’ha realitzat utilitzant Git i GitLab, seguint una organització basada en branques, issues i merge requests.
+
+=== Branques principals
+
+* `main`: versió estable i lliurable del projecte
+* `develop`: branca principal d’integració del desenvolupament
+
+=== Branques de treball
+
+* `feature/nom_funcionalitat`
+* `bugfix/nom_error`
+* `hotfix/nom_emergencia`
+* `chore/nom_tasca`
+* `experiment/nom_experiment`
+
+=== Flux de treball
+
+* Cada funcionalitat o correcció s’ha desenvolupat en una branca específica.
+* Els canvis s’han integrat mitjançant Merge Requests cap a `develop`.
+* Les branques fusionades s’han eliminat després del merge.
+* La branca `main` conté la versió final per a la demo i el lliurament.
+
+== Qualitat del codi
+
+Per al desenvolupament del projecte s’han seguit criteris de qualitat orientats a:
+
+* separació per responsabilitats
+* reutilització de components
+* mantenibilitat
+* llegibilitat del codi
+* ús de bones pràctiques segons la tecnologia
+* documentació del codi amb JavaDoc i KDoc
+
+== Internacionalització
+
+La interfície de l’aplicació està disponible en:
+
+* català
+* castellà
+* anglès
+
+L’idioma es mostra segons la configuració del dispositiu i, en cas que no coincideixi amb cap dels idiomes previstos, s’utilitza l’anglès com a idioma per defecte.
+
+== Interfície i usabilitat
+
+L’aplicació ha estat dissenyada seguint criteris de Material Design 3 per garantir:
+
+* coherència visual
+* reutilització de components
+* navegació clara
+* experiència homogènia entre pantalles
+* facilitat d’ús per a usuari anònim i autenticat
+
+== Documentació addicional
+
+La documentació completa del projecte es troba a la carpeta `documentacio`, on s’inclouen:
+
+* planificació dels sprints
+* seguiment diari
+* retrospectives
+* decisions tècniques
+* incidències
+* desviacions respecte a la planificació
+* millores futures
+* conclusions finals
+
+== Millores futures
+
+Algunes línies de millora plantejades per al projecte són:
+
+* passarel·la de pagament real
+* notificacions push
+* panell d’administració
+* filtres avançats per vehicle
+* validacions més completes
+* desplegament del backend en entorn públic
+* millores d’accessibilitat i testatge
+
+== Estat del projecte
+
+Projecte acadèmic desenvolupat dins l’ABP - Projecte 3 del curs [2024-2025 / 2025-2026], centrat en el desenvolupament d’una app Android amb backend REST.
+
+== Captures de pantalla
+
+=== Pantalla inicial
+
+image::documentacio/img/home.png[Home, width=300]
+
+=== Llistat de vehicles
+
+image::documentacio/img/vehicles.png[Vehicles, width=300]
+
+=== Detall de vehicle
+
+image::documentacio/img/vehicle-detail.png[Detall vehicle, width=300]
+
+=== Llistat de reserves
+
+image::documentacio/img/reserves.png[Reserves, width=300]
+
+=== Detall de reserva
+
+image::documentacio/img/reserva-detail.png[Detall reserva, width=300]
+
+== Enllaços
+
+* Repositori GitLab: link:[https://gitlab.com/belharrak/projecte3_grup4][Repositori del projecte]
+* Vídeo: link:[https://drive.google.com/file/d/1wi4RcSJEHeLXuTi5LG0krJqMkQiLLNYb/view?usp=sharing][Vídeo promocional / demo]
+* Portafolis: veure apartat corresponent d’aquest document
+
+== Autoría
+
+Projecte desenvolupat per l’equip [NOM DEL GRUP] dins del mòdul corresponent del CFGS DAM.

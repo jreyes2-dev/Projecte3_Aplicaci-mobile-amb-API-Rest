@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MobileCat</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_reservations">Reservations</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_vehicles">Vehicles</string>
+    <string name="nav_register">Register</string>
+
+    <!-- Common -->
+    <string name="back">Back</string>
+    <string name="enrere">Back</string>
+    <string name="tornar_enrere">Go back</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="cancel_lar">Cancel</string>
+    <string name="acceptar">Accept</string>
+    <string name="show">Show</string>
+    <string name="hide">Hide</string>
+    <string name="save_changes">Save changes</string>
+    <string name="seleccionar_data">Select date</string>
+
+    <!-- Vehicles -->
+    <string name="available_vehicles">Available vehicles</string>
+    <string name="available_vehicle">Select a vehicle</string>
+    <string name="no_vehicles_available">No vehicles available</string>
+    <string name="filter_by_date_range">Filter by date range</string>
+    <string name="apply_filter">Apply filter</string>
+    <string name="sort">Sort</string>
+    <string name="sort_by_price">Sort by price</string>
+    <string name="ascending">Ascending</string>
+    <string name="descending">Descending</string>
+    <string name="vehicle_details">Vehicle details</string>
+    <string name="vehicle_photo_description">Vehicle photo</string>
+    <string name="book_vehicle">Reserve vehicle</string>
+    <string name="view_detail">View detail</string>
+    <string name="select_car">Select a car</string>
+    <string name="color">Color: %1$s</string>
+    <string name="power">Power: %1$s</string>
+    <string name="hour">%1$s €/hour</string>
+    <string name="mileage_limit">Mileage limit: %1$s</string>
+    <string name="minimum_rental_days">Minimum rental days: %1$s</string>
+    <string name="maximum_rental_days">Maximum rental days: %1$s</string>
+    <string name="standard_deposit">Standard deposit: %1$s</string>
+    <string name="electric">Electric</string>
+    <string name="hybrid">Hybrid</string>
+    <string name="diesel">Diesel</string>
+
+    <!-- Reservations -->
+    <string name="reservations_title">My reservations</string>
+    <string name="reservation_detail_title">Reservation detail</string>
+    <string name="reservation_vehicle">Vehicle</string>
+    <string name="reservation_code">Reservation #%1$s</string>
+    <string name="reservation_date_range">From %1$s to %2$s</string>
+    <string name="reservation_status_label">Status</string>
+    <string name="reservation_total">Total: %1$s</string>
+    <string name="reservation_amount">Amount: %1$s €</string>
+    <string name="reservation_created_title">Reservation Created</string>
+    <string name="status_active">Active</string>
+    <string name="status_cancelled">Canceled</string>
+    <string name="status_finished">Finished</string>
+    <string name="cancel_reservation">Cancel reservation</string>
+    <string name="confirm_cancel_question">Are you sure you want to cancel this reservation?</string>
+    <string name="cannot_cancel_started_finished">Started or finished reservations cannot be cancelled.</string>
+
+    <!-- Reservation creation -->
+    <string name="create_reservation_title">New Reservation</string>
+    <string name="select_dates">Select your dates</string>
+    <string name="start_date">Start date</string>
+    <string name="end_date">End date</string>
+    <string name="start_date_dd_mm_yyyy">Start date (dd/mm/yyyy)</string>
+    <string name="end_date_dd_mm_yyyy">End date (dd/mm/yyyy)</string>
+    <string name="rental_days">Rental days</string>
+    <string name="cost_summary">Cost summary</string>
+    <string name="deposit">Deposit</string>
+    <string name="rental_cost">Rental cost</string>
+    <string name="total_to_pay">TOTAL TO PAY</string>
+    <string name="confirm_reservation">Confirm reservation</string>
+
+    <!-- Login -->
+    <string name="login_title">Login</string>
+    <string name="login_subtitle">Sign in with your account</string>
+    <string name="email_label">Email</string>
+    <string name="password_label">Password</string>
+    <string name="login_action">Sign in</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="go_to_register">Create account</string>
+
+    <!-- Recover password -->
+    <string name="recover_title">Recover password</string>
+    <string name="recover_subtitle">Forgot your password?</string>
+    <string name="recover_hint">Enter your email and we will send you a reset link.</string>
+    <string name="recover_action">Send link</string>
+    <string name="recover_success">Recovery instructions sent</string>
+    <string name="reset_password_title">Reset password</string>
+    <string name="recovery_token_label">Recovery token</string>
+    <string name="new_password_label">New password</string>
+    <string name="confirm_password_label">Confirm password</string>
+    <string name="reset_password_action">Update password</string>
+    <string name="password_reset_success">Password updated successfully</string>
+
+    <!-- Edit profile -->
+    <string name="logout">Logout</string>
+    <string name="logout_confirm_title">Confirm logout</string>
+    <string name="logout_confirm_text">Are you sure you want to log out?</string>
+    <string name="edit_profile_title">Edit profile</string>
+    <string name="profile_photo">Profile photo</string>
+    <string name="pick_profile_photo">Choose profile photo</string>
+    <string name="full_name_label">Full name *</string>
+    <string name="email_readonly">Email (not editable)</string>
+    <string name="phone_label">Phone</string>
+    <string name="address_label">Address</string>
+    <string name="nationality_label">Nationality</string>
+    <string name="documentation">Documentation</string>
+    <string name="id_expiry_label">ID expiry (YYYY-MM-DD)</string>
+    <string name="id_image">ID image</string>
+    <string name="pick_id_image">Choose ID image</string>
+    <string name="license_type_label">Driving license type</string>
+    <string name="license_expiry_label">License expiry (YYYY-MM-DD)</string>
+    <string name="license_image">License image</string>
+    <string name="pick_license_image">Choose license image</string>
+    <string name="payment">Payment</string>
+    <string name="credit_card_label">Credit card number</string>
+    <string name="profile_saved">Profile saved</string>
+
+    <!-- Registration -->
+    <string name="registre_pas_de">Registration - Step %1$d of %2$d</string>
+    <string name="seg_ent">Next</string>
+    <string name="finalitzar">Finish</string>
+
+    <string name="dades_personals">Personal Data</string>
+    <string name="nom_complet">Full name</string>
+    <string name="n_mero_d_identificaci">Identification number</string>
+    <string name="data_caducitat">Expiration date</string>
+    <string name="pujar_foto_identificaci">Upload ID photo</string>
+
+    <string name="dades_de_conducci_i_pagament">Driving and Payment Details</string>
+    <string name="tipus_de_llic_ncia">License type</string>
+    <string name="data_caducitat_llic_ncia">License expiration date</string>
+    <string name="pujar_foto_llic_ncia">Upload license photo</string>
+    <string name="targeta_de_cr_dit">Credit card</string>
+
+    <string name="dades_de_contacte_i_acc_s">Contact and Access Details</string>
+    <string name="adre_a">Address</string>
+    <string name="nacionalitat">Nationality</string>
+    <string name="email_usuari">Email (Username)</string>
+    <string name="email_example_com">email@example.com</string>
+    <string name="contrasenya">Password</string>
+    <string name="contrasenya_m_n_6_car_cters">Password (min 6 characters)</string>
+
+    <string name="pujar">Upload %1$s</string>
+    <string name="foto_seleccionada">Photo selected</string>
+    <string name="email_body_greeting">Hello,</string>
+    <string name="email_body_cancelled_vehicle">Your reservation for vehicle %1$s has been successfully cancelled.</string>
+    <string name="email_body_refund">A refund of %1$s € has been issued.</string>
+    <string name="cancellation_notification_title">Cancellation Notification</string>
+    <string name="email_to">To: %1$s</string>
+    <string name="email_subject_cancellation">Subject: Reservation Cancellation Confirmation</string>
+
+
+    <!-- Validation errors -->
+    <string name="error_generic">Something went wrong</string>
+    <string name="error_email_required">Email is required</string>
+    <string name="error_email_invalid">Invalid email</string>
+    <string name="error_password_required">Password is required</string>
+    <string name="error_password_too_short">Password must be at least 6 characters</string>
+    <string name="error_password_mismatch">Passwords do not match</string>
+    <string name="error_invalid_credentials">Invalid credentials</string>
+    <string name="error_recover_failed">Recovery request failed</string>
+    <string name="error_reset_failed">Could not reset password</string>
+    <string name="error_token_required">Recovery token is required</string>
+    <string name="error_session_missing_dni">No DNI saved in session</string>
+    <string name="error_full_name_required">Full name is required</string>
+    <string name="error_profile_load">Error loading profile</string>
+    <string name="error_profile_save">Error saving profile</string>
+
+    <string name="err_nom_complet_buit">Full name cannot be empty.</string>
+    <string name="err_nom_format">The name can only contain letters and spaces.</string>
+    <string name="err_numero_id_buit">Identification number cannot be empty.</string>
+    <string name="err_format_data">Incorrect date format (use YYYY-MM-DD).</string>
+    <string name="err_data_passada">Expiration date cannot be in the past.</string>
+    <string name="err_data_invalida">Invalid date.</string>
+    <string name="err_adreca_buida">Address cannot be empty.</string>
+    <string name="err_nacionalitat_buida">Nationality cannot be empty.</string>
+    <string name="err_email_buit">Email cannot be empty.</string>
+    <string name="err_email_format">Incorrect email format.</string>
+    <string name="err_password_buida">Password cannot be empty.</string>
+    <string name="err_tipus_llicencia_buit">License type cannot be empty.</string>
+    <string name="err_llicencia_caducada">The license cannot be expired.</string>
+    <string name="err_targeta_buida">Credit card cannot be empty.</string>
+    <string name="err_targeta_format">The card must have between 13 and 19 digits.</string>
+    <string name="err_foto_llicencia">You must upload the license photo.</string>
+    <string name="err_foto_identificacio">You must upload the identification photo.</string>
+
+    <string name="error_cancel_prefix">Error cancelling reservation</string>
+    <string name="error_generic_title">Something went wrong</string>
+    <string name="error_load_reservation_details">We couldn\'t load the reservation details. Please check your connection.</string>
+    <string name="error_load_reservations">We couldn\'t load the reservations.</string>
+    <string name="error_dates_required">Please select both start and end dates.</string>
+    <string name="error_invalid_date_range">Invalid date. The start date must be earlier than the end date.</string>
+
+    <string name="login_required_title">You need to log in</string>
+    <string name="login_required_desc">Log in from your profile to use this service.</string>
+    <string name="no_reservations_found">You currently have no reservations.</string>
+
+    <string name="close">Close</string>
+    <string name="sort_list">Sort list</string>
+    <string name="app_vehicles">App Vehicles</string>
+    <string name="dates">Dates</string>
+    <string name="price">Price</string>
+    <string name="go_back">Go back</string>
+    <string name="vehicle_searching_plate">vehicle_searching_plate: \'%1$s\'</string>
+    <string name="vehicles_in_memory">vehicles_in_memory: %1$d</string>
+    <string name="vehicle_plate_variant">Vehicle_Plate_Variant: %1$s | %2$s</string>
+    <string name="error_icon">Error_icon</string>
+    <string name="no_image">No Image</string>
+    <string name="notification">Notification</string>
+    <string name="error_user_not_exist">User does not exist</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="lowest_price">Lowest price</string>
+    <string name="highest_price">Highest price</string>
+
+</resources>
