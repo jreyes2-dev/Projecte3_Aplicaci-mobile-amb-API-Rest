@@ -1,4 +1,4 @@
-= [NOMBRE DE LA APP]
+= MobiRent
 :toc:
 :toc-title: Índex
 :sectnums:
@@ -9,7 +9,7 @@ Projecte ABP - Projecte 3 - Aplicació mobile amb API REST
 
 == Descripció del projecte
 
-[Nom de l'app] és una aplicació mòbil Android desenvolupada amb Kotlin i Jetpack Compose que permet consultar vehicles, veure’n el detall, consultar la disponibilitat per rang de dates i gestionar reserves mitjançant una arquitectura client-servidor basada en una API REST implementada amb Spring Boot.
+MobiRent és una aplicació mòbil Android desenvolupada amb Kotlin i Jetpack Compose que permet consultar vehicles, veure’n el detall, consultar la disponibilitat per rang de dates i gestionar reserves mitjançant una arquitectura client-servidor basada en una API REST implementada amb Spring Boot.
 
 L’aplicació diferencia entre funcionalitats per a usuari anònim i funcionalitats per a client autenticat. Els usuaris registrats poden iniciar sessió, editar el seu perfil, crear reserves, consultar-les, ordenar-les i anul·lar-les abans de la seva data d’inici.
 
@@ -73,13 +73,13 @@ Conté la documentació del projecte en format AsciiDoc, incloent planificació,
 
 === Backend
 
-* Java [VERSIÓ]
+* Java
 * Spring Boot
 * Maven
 * Spring Web
 * Spring Data JPA
 * MySQL
-* [Swagger / Spring Security / Validation / Mail, si aplica]
+* Swagger / Spring Security / Validation / Mail
 
 === Mobile
 
@@ -92,15 +92,13 @@ Conté la documentació del projecte en format AsciiDoc, incloent planificació,
 * StateFlow / MutableStateFlow
 * Coroutines
 * Retrofit
-* Coil / Glide / Gson / Moshi [segons correspongui]
 
 === Eines de desenvolupament
 
 * Git
 * GitLab
-* Postman [si s’ha utilitzat]
-* Figma [si s’ha utilitzat]
-* MySQL Workbench [si s’ha utilitzat]
+* Postman 
+* MySQL Workbench 
 
 == Arquitectura del sistema
 
@@ -215,14 +213,14 @@ La gestió d’estat es realitza amb `MutableStateFlow` i `StateFlow`, i les ope
 
 === Backend
 
-* JDK [VERSIÓ]
-* Maven [VERSIÓ] o wrapper del projecte
-* MySQL [VERSIÓ]
+* JDK 
+* Maven
+* MySQL 
 
 === Mobile
 
-* Android Studio [VERSIÓ]
-* SDK Android [API mínima]
+* Android Studio 
+* SDK Android 
 * Emulador Android o dispositiu físic Android
 
 == Configuració del backend
@@ -432,27 +430,6 @@ Algunes línies de millora plantejades per al projecte són:
 
 Projecte acadèmic desenvolupat dins l’ABP - Projecte 3 del curs [2024-2025 / 2025-2026], centrat en el desenvolupament d’una app Android amb backend REST.
 
-== Captures de pantalla
-
-=== Pantalla inicial
-
-image::documentacio/img/home.png[Home, width=300]
-
-=== Llistat de vehicles
-
-image::documentacio/img/vehicles.png[Vehicles, width=300]
-
-=== Detall de vehicle
-
-image::documentacio/img/vehicle-detail.png[Detall vehicle, width=300]
-
-=== Llistat de reserves
-
-image::documentacio/img/reserves.png[Reserves, width=300]
-
-=== Detall de reserva
-
-image::documentacio/img/reserva-detail.png[Detall reserva, width=300]
 
 == Enllaços
 
@@ -462,4 +439,4 @@ image::documentacio/img/reserva-detail.png[Detall reserva, width=300]
 
 == Autoría
 
-Projecte desenvolupat per l’equip [NOM DEL GRUP] dins del mòdul corresponent del CFGS DAM.
+Projecte desenvolupat per Bachir El Harrak, Javier Sánchez Osuna, Hamza Rourou Rourou i Joel Reyes Niebla dins del mòdul corresponent del CFGS DAM.
